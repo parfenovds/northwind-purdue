@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customer List</title>
+</head>
+<body>
+<h1>Customer List</h1>
+<h2>Total Customers: <span th:text="${customerCount}"></span></h2>
+
+<h3>Customer Names:</h3>
+<ul>
+    <li th:each="nameDTO : ${customerNames}" th:text="${nameDTO.contactName}"></li>
+</ul>
+
+<h3>Customer Last Names:</h3>
+<ul>
+    <li th:each="lastnameDTO : ${customerLastnames}" th:text="${lastnameDTO.contactLastname}"></li>
+</ul>
+</body>
+</html>

@@ -37,7 +37,7 @@ services:
     ports:
       - "8189:8189"
     environment:
-      SPRING_DATASOURCE_URL: "jdbc:sqlserver://mssql:1433;databaseName=Northwind"
+      SPRING_DATASOURCE_URL: "jdbc:sqlserver://mssql:1433;databaseName=Northwind;encrypt=true;trustServerCertificate=true;"
       SPRING_DATASOURCE_USERNAME: "sa"
       SPRING_DATASOURCE_PASSWORD: "NotPostgres123!"
       SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
